@@ -1,0 +1,357 @@
+/* ============================================
+Custom CSS
+============================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    max-width: 990px;
+    width: 96%;
+    margin: 0 auto;
+}
+/* =========================================
+header Navbar CSS
+============================================ */
+header{
+    width:100%;
+    height: 100px;
+    background-color: #562EFF;
+}
+.inner-header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    align-items: center;
+    width: 41px;
+    height: 51px;
+    margin-top: 20px;
+    
+}
+.nav-links li{
+    display: inline;
+    padding-left: 20px;
+}
+.nav-links li a{
+    display: inline;
+    padding-left: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.nav-links li a:hover{
+    color: #1E1E1E;
+}
+.nav-links li a img{
+    padding-top: 20px;
+}
+
+/* ==========================================
+Player Area CSS
+============================================ */
+#players-area{
+    width: 100%;
+}
+
+.inner-players{
+    margin-top: 60px;
+}
+.inner-players h2{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #562EFF;
+    margin-left: 50px;
+
+}
+.inner-players .players-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 40px;
+    margin-left: 50px;
+    border-bottom: 1px solid #D1D1D1;
+
+}
+
+.players-grid .player{
+    display: flex;
+    margin-bottom: 29px;
+    cursor: pointer;
+}
+.player img{
+    width: 56px;
+    height: 56px;
+    margin-right: 16px;
+    
+}
+.player h5{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+/* ==========================================
+Blog Area CSS
+============================================ */
+#top-blog-area{
+    width: 100%;
+}
+.inner-blog{
+    margin-top: 31px;
+}
+.inner-blog h2{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #562EFF;
+    margin-left: 50px;
+    margin-bottom: 31px;
+
+}
+.inner-blog  .blog-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 50px;
+}
+.blog-grid .blog{
+    margin: 0 5px 26px 0;
+}
+
+.blog .blog-img{
+    float: left;
+    margin-right: 20px;
+    
+}
+.blog .blog-img img{
+    width: 177px;
+    height: 117px;
+    cursor: pointer;
+}
+
+.blog-content h4{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 34px;
+    color: #000000;
+    cursor: pointer;
+}
+.blog-content p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #562EFF
+    ;
+}
+.blog-content p span{
+    color: #9F9F9F;
+}
+
+/* ==========================================
+Course Area CSS
+============================================ */
+
+#last-course{
+    width: 100%;
+}
+.inner-course {
+    margin-top: 20px;
+}
+.inner-course h2{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #562EFF;
+    margin: 64px 0 31px 50px;
+
+}
+.inner-course .courses-flex{
+    display: flex;
+    width: 100%;
+    margin-left: 50px;
+}
+.courses-flex .course{
+    margin-right: 53px;
+}
+.course img{
+    width: 224px;
+    cursor: pointer;
+}
+.course h4{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20.0336px;
+    line-height: 23px;
+    color: #1E1E1E;
+    margin-top: 16px;
+    cursor: pointer;
+}
+.course p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14.6913px;
+    line-height: 17px;
+    color: #ED6B4F;
+    margin-top: 6px;
+}
+.rating-time{
+    width: 100%;
+    display: flex;
+}
+.rating-time .rating{
+    width: 50%;
+    margin-right: 5%;
+}
+.rating img{
+    width: 40%;
+}
+.rating span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14.6913px;
+    line-height: 22px;
+    color: #A2A2A2;
+}
+.rating-time .time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    background: #FFE4E8;
+    border-radius: 14.6913px;
+    
+}
+.rating-time  .time img{
+    width: 20px;
+    margin-right: 10px;
+}
+.time span{
+    text-align: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14.6913px;
+    line-height: 20px;
+    color: #FF4A60;
+}
+
+/* ================================================
+Mobile responsive
+=================================================== */
+
+@media only screen and (min-width: 200px) and (max-width: 900px) {
+
+    .course img {
+        width: 200px;
+    }
+    .rating-time .rating img{
+            width: 60px;
+    } 
+    .rating-time .time {
+        width: 35%;
+    } 
+    .rating span {
+        font-size: 12px;
+    }
+    .rating-time .time img {
+        width: 18px;
+        margin-right: 5px;
+    }
+    .time span {
+        font-size: 12px;
+    }
+
+
+
+}
+@media only screen and (min-width: 200px) and (max-width: 450px) {
+
+    .inner-players .players-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-right: 15px;
+        margin-left: 5px;
+    }
+    .inner-blog .blog-grid {
+        display:block
+    }
+    .inner-course .courses-flex {
+        display: block;
+    }
+    .inner-players h2, .inner-blog h2, .inner-course h2 {
+        margin: 5px;
+    }
+    .blog .blog-img {
+        float: none;
+    }
+    /* .inner-players .players-grid {
+        
+    } */
+    .inner-blog .blog-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-left: 5px;
+    }
+    .inner-course .courses-flex {
+        margin-left: 5px;
+    }
+    .course img {
+        width: 350px;
+    }
+    .course h4 {
+        font-size: 25px;
+    }
+    .course p {
+        font-size: 18px;
+    }
+    .inner-course .courses-flex {
+        margin-top: 40px;
+    }
+    .courses-flex .course {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .course h4 {
+        line-height: 26px;
+      }
+    .course img {
+        width: 98%;
+    }
+    .rating-time {
+        display: block;
+    }
+    .rating-time .rating {
+        margin-bottom: 5px;
+    }
+    .rating-time .rating img {
+        width: 80px;
+    }
+    .rating span {
+        font-size: 13px;
+    }
+    .rating-time .time {
+        width: 20%
+    }
+    .rating-time .time img {
+        width: 22px;
+    }
+    .time span {
+        font-size: 15px;
+    }
+}
+
+
+
+
